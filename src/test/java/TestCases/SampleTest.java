@@ -11,6 +11,7 @@ public class SampleTest extends BaseTest {
     public static void main(String[] args) throws MalformedURLException {
      AndroidDriver<AndroidElement> driver = capabilities();
      driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
-     driver.quit();
+     driver.findElementByXPath("//android.widget.TextView[@text='Allow Location Access']").click();
+//     driver.quit();
     }
 }

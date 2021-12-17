@@ -23,6 +23,8 @@ public class BaseTest {
         cap.setCapability(MobileCapabilityType.UDID, "2220c33e10037ece");
 
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        System.out.println("Application Starting...");
         return driver;
     }
 }
