@@ -57,6 +57,10 @@ public class Locators {
     public static By rewards = By.xpath("//android.widget.LinearLayout[@content-desc=\"Rewards shop\"]/android.widget.TextView");
     // vouchers
     public static By past = By.xpath("//android.widget.LinearLayout[@content-desc=\"Past\"]/android.widget.TextView");
+    //setting sec
+    public static By languageEdit = By.id("com.global.foodpanda.android:id/editLang");
+    public static By languageSelect = By.id("android:id/text1");
+    public static By languageSelectConfirm = By.id("android:id/button1");
 
     public static By myProfile = By.id("com.bikroy:id/my_account_my_resume");
     public static By backButton = By.className("android.widget.ImageButton");
