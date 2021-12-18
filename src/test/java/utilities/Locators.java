@@ -44,9 +44,12 @@ public class Locators {
     public static By myAds = By.id("com.bikroy:id/my_account_my_ads");
     public static By myMembership = By.id("com.bikroy:id/my_account_my_membership");
 
-    public static By favorites = By.id("com.global.foodpanda.android:id/itemTitle");
+    public static By allSidebarMenu = By.id("com.global.foodpanda.android:id/itemTitle");
+    // fav sec
     public static By deliveryOrPickup = By.className("android.widget.RadioButton");
     public static By resOrShops = By.className("android.widget.TextView");
+    // order sec
+    public static By browseResturent = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
 
     public static By myProfile = By.id("com.bikroy:id/my_account_my_resume");
     public static By backButton = By.className("android.widget.ImageButton");

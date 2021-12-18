@@ -13,17 +13,18 @@ import utilities.TimeOut;
 
 import java.net.MalformedURLException;
 
-public class Favourites extends BaseTest {
+public class Orders extends BaseTest {
 
     AndroidDriver<AndroidElement> driver = capabilities();
     ButtonAndTexts buttonAndTexts = new ButtonAndTexts(driver);
     TimeOut timeOut = new TimeOut();
 
-    public Favourites() throws MalformedURLException {
+    public Orders() throws MalformedURLException {
     }
 
+
     @BeforeTest
-    public void beforeTests() {
+    public void ordersTests() {
         timeOut.timeOut();
         buttonAndTexts.BtnSClick(Locators.enterMyLocation, 2);
         timeOut.timeOut();
@@ -51,14 +52,10 @@ public class Favourites extends BaseTest {
     public void favTest() {
         buttonAndTexts.btnClick(Locators.leftSidebar);
         timeOut.timeOut();
-        buttonAndTexts.BtnSClick(Locators.allSidebarMenu, 0);
+        buttonAndTexts.BtnSClick(Locators.allSidebarMenu, 1);
         timeOut.timeOut();
-        buttonAndTexts.BtnSClick(Locators.deliveryOrPickup, 1);
+        buttonAndTexts.btnClick(Locators.browseResturent);
         timeOut.timeOut();
-        buttonAndTexts.BtnSClick(Locators.resOrShops, 2);
-        timeOut.timeOut();
-
-
     }
 
     @AfterTest
