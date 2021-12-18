@@ -73,7 +73,12 @@ public class Locators {
     public static By sendDataToSearchFiled = By.id("com.global.foodpanda.android:id/searchEditText");
     public static By clickShop = By.xpath("//android.widget.LinearLayout[@content-desc=\"Shops\"]/android.widget.TextView");
 
-
+    //order food
+    public static By clickFoodDelivery = By.className("android.widget.ImageView");
+    public static By clickFoodItem = By.className("android.view.ViewGroup");
+    public static By clickAddToCart = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
+    public static By clickViewCart = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
+    public static By reviewPaymentAndAddress = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
     //assert elements class names
     public static String headingElements = "android.widget.TextView";
     public static String adSliderItems = "android.widget.FrameLayout";
