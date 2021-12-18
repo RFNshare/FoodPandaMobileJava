@@ -10,7 +10,7 @@ public class Locators {
     public static By emailField = By.id("com.global.foodpanda.android:id/inputFieldEditText");
     public static By emailFieldConfirm = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
     public static By passwordField = By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.ScrollView/android.view.ViewGroup/android.view.ViewGroup[3]/android.widget.LinearLayout[1]/android.widget.FrameLayout/android.widget.EditText");
-   // public static By passwordField = By.id("com.global.foodpanda.android:id/inputFieldEditText");
+    // public static By passwordField = By.id("com.global.foodpanda.android:id/inputFieldEditText");
     public static By loginConfirm = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
     public static String emailText = "af.qups@gmail.com";
     public static String passwordText = "asdfgh123";
@@ -50,6 +50,8 @@ public class Locators {
     public static By resOrShops = By.className("android.widget.TextView");
     // order sec
     public static By browseResturent = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
+    // address sec
+    public static By addAddress = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
 
     public static By myProfile = By.id("com.bikroy:id/my_account_my_resume");
     public static By backButton = By.className("android.widget.ImageButton");

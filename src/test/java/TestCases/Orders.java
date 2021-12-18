@@ -49,7 +49,7 @@ public class Orders extends BaseTest {
 
 
     @Test
-    public void favTest() {
+    public void orderTest() {
         buttonAndTexts.btnClick(Locators.leftSidebar);
         timeOut.timeOut();
         buttonAndTexts.BtnSClick(Locators.allSidebarMenu, 1);
