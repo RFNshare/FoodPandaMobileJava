@@ -63,6 +63,8 @@ public class Locators {
     public static By languageSelectConfirm = By.id("android:id/button1");
     public static By tick_untick = By.id("com.global.foodpanda.android:id/marketing_push_notifications");
 
+    public static By TAndCAndData = By.id("com.global.foodpanda.android:id/page_text");
+
     public static By myProfile = By.id("com.bikroy:id/my_account_my_resume");
     public static By backButton = By.className("android.widget.ImageButton");
 
