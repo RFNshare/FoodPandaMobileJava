@@ -55,7 +55,8 @@ public class Locators {
     // challengesAndRewards
     public static By badges = By.xpath("//android.widget.LinearLayout[@content-desc=\"Badges\"]/android.widget.TextView");
     public static By rewards = By.xpath("//android.widget.LinearLayout[@content-desc=\"Rewards shop\"]/android.widget.TextView");
-
+    // vouchers
+    public static By past = By.xpath("//android.widget.LinearLayout[@content-desc=\"Past\"]/android.widget.TextView");
 
     public static By myProfile = By.id("com.bikroy:id/my_account_my_resume");
     public static By backButton = By.className("android.widget.ImageButton");
