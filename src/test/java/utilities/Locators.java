@@ -37,7 +37,7 @@ public class Locators {
     public static By forgotPassBtn = By.id("com.bikroy:id/register_forgot_password");
 
     //profile screen
-    public static By logoutBtn = By.id("com.bikroy:id/my_account_logout");
+    public static By logoutBtn = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
 
 
     //Account Page
