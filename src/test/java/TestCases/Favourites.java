@@ -13,11 +13,14 @@ import utilities.TimeOut;
 
 import java.net.MalformedURLException;
 
-public class LoginTest extends BaseTest {
+public class Favourites extends BaseTest {
 
     AndroidDriver<AndroidElement> driver = capabilities();
     ButtonAndTexts buttonAndTexts = new ButtonAndTexts(driver);
     TimeOut timeOut = new TimeOut();
+
+    public Favourites() throws MalformedURLException {
+    }
 
     @BeforeTest
     public void beforeTests() {
@@ -26,14 +29,6 @@ public class LoginTest extends BaseTest {
         timeOut.timeOut();
         buttonAndTexts.btnClick(Locators.confirmLoc);
         timeOut.timeOut();
-    }
-
-    public LoginTest() throws MalformedURLException {
-    }
-
-    @Test
-    public void loginTest() {
-
         buttonAndTexts.btnClick(Locators.leftSidebar);
         timeOut.timeOut();
         buttonAndTexts.btnClick(Locators.loginBtn);
@@ -49,6 +44,20 @@ public class LoginTest extends BaseTest {
         buttonAndTexts.btnClick(Locators.loginConfirm);
         timeOut.timeOut();
         timeOut.timeOutFixed(30000);
+    }
+
+
+    @Test
+    public void favTest() {
+        buttonAndTexts.btnClick(Locators.leftSidebar);
+        timeOut.timeOut();
+        buttonAndTexts.BtnSClick(Locators.favorites, 0);
+        timeOut.timeOut();
+        buttonAndTexts.BtnSClick(Locators.deliveryOrPickup, 1);
+        timeOut.timeOut();
+        buttonAndTexts.BtnSClick(Locators.deliveryOrPickup, 2);
+        timeOut.timeOut();
+
 
     }
 

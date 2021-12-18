@@ -17,10 +17,10 @@ public class BaseTest {
         DesiredCapabilities cap = new DesiredCapabilities();
 //        File appDir = new File("apk");
         File app =  new File("apk", "foodpanda.apk");
-        cap.setCapability(MobileCapabilityType.DEVICE_NAME, "Samsung S9+");
+        cap.setCapability(MobileCapabilityType.DEVICE_NAME, "HUAWEI P30 Lite");
         cap.setCapability(MobileCapabilityType.APP, app.getAbsolutePath());
         cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "UiAutomator2");
-        cap.setCapability(MobileCapabilityType.UDID, "2220c33e10037ece");
+        cap.setCapability(MobileCapabilityType.UDID, "8RBDU19325003729");
 
         driver = new AndroidDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), cap);
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
