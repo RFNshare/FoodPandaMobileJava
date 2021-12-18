@@ -68,7 +68,10 @@ public class Locators {
     public static By myProfile = By.id("com.bikroy:id/my_account_my_resume");
     public static By backButton = By.className("android.widget.ImageButton");
 
-    //
+    //Search
+    public static By clickSearchFiled = By.id("com.bikroy:id/my_account_my_resume");
+    public static By sendDataToSearchFiled = By.id("com.global.foodpanda.android:id/searchEditText");
+    public static By clickShop = By.xpath("//android.widget.LinearLayout[@content-desc=\"Shops\"]/android.widget.TextView");
 
 
     //assert elements class names
