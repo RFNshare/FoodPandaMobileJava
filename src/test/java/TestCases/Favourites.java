@@ -55,7 +55,7 @@ public class Favourites extends BaseTest {
         timeOut.timeOut();
         buttonAndTexts.BtnSClick(Locators.deliveryOrPickup, 1);
         timeOut.timeOut();
-        buttonAndTexts.BtnSClick(Locators.deliveryOrPickup, 2);
+        buttonAndTexts.BtnSClick(Locators.resOrShops, 2);
         timeOut.timeOut();
 
 
