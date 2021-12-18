@@ -13,13 +13,13 @@ import utilities.TimeOut;
 
 import java.net.MalformedURLException;
 
-public class Address extends BaseTest {
+public class ChallangesAndRewards extends BaseTest {
 
     AndroidDriver<AndroidElement> driver = capabilities();
     ButtonAndTexts buttonAndTexts = new ButtonAndTexts(driver);
     TimeOut timeOut = new TimeOut();
 
-    public Address() throws MalformedURLException {
+    public ChallangesAndRewards() throws MalformedURLException {
     }
 
     @BeforeTest
@@ -48,17 +48,15 @@ public class Address extends BaseTest {
 
 
     @Test
-    public void addressTest() {
+    public void cAndRTest() {
         buttonAndTexts.btnClick(Locators.leftSidebar);
         timeOut.timeOut();
-        buttonAndTexts.BtnSClick(Locators.allSidebarMenu, 3);
+        buttonAndTexts.BtnSClick(Locators.allSidebarMenu, 4);
         timeOut.timeOut();
-        buttonAndTexts.btnClick(Locators.addAddress);
+        buttonAndTexts.btnClick(Locators.badges);
         timeOut.timeOut();
-        buttonAndTexts.btnClick(Locators.addAddress);
+        buttonAndTexts.btnClick(Locators.rewards);
         timeOut.timeOut();
-
-
     }
 
     @AfterTest

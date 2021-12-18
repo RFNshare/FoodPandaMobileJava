@@ -52,9 +52,16 @@ public class Locators {
     public static By browseResturent = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
     // address sec
     public static By addAddress = By.id("com.global.foodpanda.android:id/coreButtonTitleTextView");
+    // challengesAndRewards
+    public static By badges = By.xpath("//android.widget.LinearLayout[@content-desc=\"Badges\"]/android.widget.TextView");
+    public static By rewards = By.xpath("//android.widget.LinearLayout[@content-desc=\"Rewards shop\"]/android.widget.TextView");
+
 
     public static By myProfile = By.id("com.bikroy:id/my_account_my_resume");
     public static By backButton = By.className("android.widget.ImageButton");
+
+    //
+
 
     //assert elements class names
     public static String headingElements = "android.widget.TextView";
